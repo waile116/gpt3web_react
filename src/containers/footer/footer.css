@@ -1,0 +1,133 @@
+/* container */
+.gpt3__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-footer);
+}
+/* heading container */
+.gpt3__footer-heading {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+/* heading title */
+.gpt3__footer-heading h1 {
+  font-family: var(--font-family);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 70px;
+}
+/* button container*/
+.gpt3__footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: solid 1px white;
+  margin-bottom: 10rem;
+}
+/* button */
+.gpt3__footer-btn p {
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  cursor: pointer;
+}
+/* link container */
+.gpt3__footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.gpt3__footer-links div {
+  width: 200px;
+  margin: 1rem;
+}
+/* logo container*/
+.gpt3__footer-links_logo {
+  display: flex;
+  flex-direction: column;
+}
+/* logo */
+.gpt3__footer-links_logo img {
+  width: 118px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+/* logo text */
+.gpt3__footer-links_logo p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+/* links container */
+.gpt3__footer-links_div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+/* links title */
+.gpt3__footer-links_div h4 {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+/* links text */
+.gpt3__footer-links_div p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+/* copyright container */
+.gpt3__footer-copyright {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+/* copyright text */
+.gpt3__footer-copyright p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+/* tablet screen(decrease font size) */
+@media screen and (max-width: 850px) {
+  .gpt3__footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+/* mobile screen(decrease font size and margin) */
+@media screen and (max-width: 460px) {
+  .gpt3__footer-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .gpt3__footer-links div {
+    margin: 1rem 0;
+  }
+  .gpt3__footer-btn p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/* smaller mobile screen(decrease font size) */
+@media screen and (max-width: 400px) {
+  .gpt3__footer-heading h1 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}

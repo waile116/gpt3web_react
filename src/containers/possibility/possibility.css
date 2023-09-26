@@ -1,0 +1,75 @@
+/* container */
+.gpt3__possibility {
+  width: 100%;
+  display: flex;
+}
+/* image container */
+.gpt3__possibility-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+/* image */
+.gpt3__possibility-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* content container */
+.gpt3__possibility-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+/* content h1 */
+.gpt3__possibility-content h1 {
+  font-family: var(--font-family);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 45px;
+}
+/* first h4 */
+.gpt3__possibility-content h4 {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ff8a71;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+/* second h4 */
+.gpt3__possibility-content h4:last-child {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+/* content p */
+.gpt3__possibility-content p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--color-text);
+  margin: 2rem 0;
+}
+
+/* tablet screen(change to column) */
+@media screen and (max-width: 950px) {
+  .gpt3__possibility {
+    flex-direction: column;
+  }
+  .gpt3__possibility-image {
+    margin: 1rem 0;
+  }
+  .gpt3__possibility-content {
+    margin-top: 2rem;
+  }
+}

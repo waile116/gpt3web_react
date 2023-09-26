@@ -1,0 +1,103 @@
+/* container background */
+.gpt3__whatgpt3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 40px rgba(0, 254, 170, 0.7);
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    158deg,
+    rgba(4, 44, 84, 1) 74%,
+    rgba(27, 120, 222, 1) 100%
+  );
+}
+/* 1st feature */
+.gpt3__whatgpt3-feature {
+  display: flex;
+}
+.gpt3__whatgpt3-feature .gpt3__features-container {
+  margin: 0;
+}
+.gpt3__whatgpt3-feature .gpt3__features-container__text {
+  max-width: 700px;
+}
+/* heading container*/
+.gpt3__whatgpt3-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4rem 0 2rem;
+}
+/* heading h1 */
+.gpt3__whatgpt3-heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+}
+/* heading p */
+.gpt3__whatgpt3-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+/* 2nd-4th feature */
+.gpt3__whatgpt3-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.gpt3__whatgpt3-features .gpt3__features-container {
+  flex: 1;
+  margin: 1rem;
+  width: 100%;
+  display: unset;
+  flex-direction: column;
+}
+.gpt3__whatgpt3-features .gpt3__features-container-text {
+  margin-top: 0.5rem;
+}
+
+/* tablet screen(change heading and 2nd-4th features to column) */
+@media screen and (max-width: 850px) {
+  .gpt3__whatgpt3-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+  .gpt3__whatgpt3-heading p {
+    margin-top: 1rem;
+  }
+  .gpt3__whatgpt3-features {
+    flex-direction: column;
+  }
+}
+/* mobile screen(change 1st feature to column and decrease font-size)*/
+@media screen and (max-width: 650px) {
+  .gpt3__whatgpt3-feature .gpt3__features-container {
+    flex-direction: column;
+  }
+  .gpt3__whatgpt3-feature .gpt3__features-container-text {
+    margin-top: 0.5rem;
+  }
+  .gpt3__whatgpt3-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .gpt3__whatgpt3-heading p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+/* remove left right padding of 2nd-4th features */
+@media screen and (max-width: 350px) {
+  .gpt3__whatgpt3-features .gpt3__features-container {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
+}

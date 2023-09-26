@@ -1,0 +1,53 @@
+/* whole container */
+.gpt3__features-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem;
+}
+/* title container*/
+.gpt3__features-container-title {
+  flex: 1;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+.gpt3__features-container-title h1 {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  color: white;
+}
+.gpt3__features-container-title div {
+  width: 38px;
+  height: 3px;
+  background: var(--gradient-bar);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.5rem;
+}
+/* text container */
+.gpt3__features-container-text {
+  flex: 2;
+}
+.gpt3__features-container-text p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--color-text);
+}
+
+/* decrease font size */
+@media screen and (max-width: 550px) {
+  .gpt3__features-container {
+    margin: 1rem 0;
+  }
+  .gpt3__features-container-title h1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .gpt3__features-container-text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

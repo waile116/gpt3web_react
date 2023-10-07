@@ -27,6 +27,7 @@
   padding: 1rem;
   border: solid 1px white;
   margin-bottom: 10rem;
+  cursor: pointer;
 }
 /* button */
 .gpt3__footer-btn p {
@@ -34,7 +35,6 @@
   font-size: 18px;
   line-height: 21px;
   color: white;
-  cursor: pointer;
 }
 /* link container */
 .gpt3__footer-links {
